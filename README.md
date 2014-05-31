@@ -26,3 +26,5 @@ scikit-learn==0.13.1
 # Port
 
 Databench will pick up the environment variable `PORT`. This functionally was introduced in Databench 0.1.1.
+
+Starting version 0.1.2, databench responds to non-local requests.
