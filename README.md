@@ -21,3 +21,8 @@ matplotlib==1.1.0
 scipy==0.11.0
 scikit-learn==0.13.1
 ```
+
+
+# Port
+
+Databench will pick up the environment variable `PORT`. This functionally was introduced in Databench 0.1.1.
