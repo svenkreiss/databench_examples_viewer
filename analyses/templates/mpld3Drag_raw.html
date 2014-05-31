@@ -1,4 +1,5 @@
-{% extends "baseheroku.html" %}
+{% raw %}
+{% extends "base.html" %}
 {% block title %}mpld3Drag{% endblock %}
 
 
@@ -10,24 +11,6 @@
 <div id="mpld3canvas"></div>
 
 <pre id="log"></pre>
-
-
-
-<br /><br />
-<hr />
-
-<h3>Source code</h3>
-
-<p>Frontend:</p>
-{% highlight 'html' %}
-{% include 'mpld3Drag_raw.html' %}
-{% endhighlight %}
-
-<p>Backend:</p>
-{% highlight 'python' %}
-{% include 'mpld3Drag_py_raw.html' %}
-{% endhighlight %}
-
 {% endblock %}
 
 
@@ -93,3 +76,4 @@
   databench.genericElements.mpld3canvas($("#mpld3canvas"));
 </script>
 {% endblock %}
+{% endraw %}
