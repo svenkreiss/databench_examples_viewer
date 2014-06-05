@@ -1,4 +1,7 @@
+{% from 'macros.html' import include_src %}
 {% extends "baseheroku.html" %}
+
+
 {% block title %}mpld3PointLabel{% endblock %}
 
 
@@ -18,22 +21,10 @@ this documentation is a block of `markdown` embedded in the HTML.
 <div id="mpld3canvas"></div>
 <pre id="log"></pre>
 
-
-<br /><br />
-<hr />
-
-<h3>Source code</h3>
-
-<p>Backend:</p>
-{% highlight 'python' %}
-{% include 'mpld3PointLabel_py_raw.html' %}
-{% endhighlight %}
-
-<p>Frontend:</p>
-{% highlight 'html' %}
-{% include 'mpld3PointLabel_raw.html' %}
-{% endhighlight %}
-
+<br /><br /><hr />
+<h3>Source Code</h3>
+mpld3PointLabel.py: {{ include_src('mpld3PointLabel.py', 'python') }}
+mpld3PointLabel.html: {{ include_src('templates/mpld3PointLabel.html') }}
 {% endblock %}
 
 

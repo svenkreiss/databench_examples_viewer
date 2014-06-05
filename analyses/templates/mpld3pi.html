@@ -1,4 +1,7 @@
+{% from 'macros.html' import include_src %}
 {% extends "baseheroku.html" %}
+
+
 {% block title %}mpld3pi{% endblock %}
 
 
@@ -19,23 +22,10 @@ in <i>d3.js</i> using <i>mpld3</i>.</p>
 
 <pre id="log"></pre>
 
-
-
-<br /><br />
-<hr />
-
-<h3>Source code</h3>
-
-<p>Frontend:</p>
-{% highlight 'html' %}
-{% include 'mpld3pi_raw.html' %}
-{% endhighlight %}
-
-<p>Backend:</p>
-{% highlight 'python' %}
-{% include 'mpld3pi_py_raw.html' %}
-{% endhighlight %}
-
+<br /><br /><hr />
+<h3>Source Code</h3>
+mpld3pi.py: {{ include_src('mpld3pi.py', 'python') }}
+mpld3pi.html: {{ include_src('templates/mpld3pi.html') }}
 {% endblock %}
 
 

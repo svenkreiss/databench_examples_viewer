@@ -1,33 +1,29 @@
+{% from 'macros.html' import include_src %}
 {% extends "baseheroku.html" %}
+
+
 {% block title %}mpld3Drag{% endblock %}
 
 
 {% block content %}
-<h1>mpld3Drag</h1>
+{% filter markdown %}
+# mpld3Drag
 
-<p>Testing custom plugins for mpld3. The plot is created with <i>matplotlib</i> and rendered in <i>d3.js</i> using <i>mpld3</i>. This is based on <a href="http://mpld3.github.io/examples/heart_path.html">http://mpld3.github.io/examples/heart_path.html</a>. The only difference is that the JavaScript code is moved from the string in the Python plugin class directly into the script-tag on the frontend.</p> 
+Testing custom plugins for mpld3. The plot is created with `matplotlib` and
+rendered in `d3.js` using `mpld3`. This is based on
+[http://mpld3.github.io/examples/heart_path.html](http://mpld3.github.io/examples/heart_path.html).
+The only difference is that the JavaScript code is moved from the string in
+the Python plugin class directly into the `<script>`-tag on the frontend.
+{% endfilter %}
 
 <div id="mpld3canvas"></div>
 
 <pre id="log"></pre>
 
-
-
-<br /><br />
-<hr />
-
-<h3>Source code</h3>
-
-<p>Frontend:</p>
-{% highlight 'html' %}
-{% include 'mpld3Drag_raw.html' %}
-{% endhighlight %}
-
-<p>Backend:</p>
-{% highlight 'python' %}
-{% include 'mpld3Drag_py_raw.html' %}
-{% endhighlight %}
-
+<br /><br /><hr />
+<h3>Source Code</h3>
+mpld3Drag.py: {{ include_src('mpld3Drag.py', 'python') }}
+mpld3Drag.html: {{ include_src('templates/mpld3Drag.html') }}
 {% endblock %}
 
 
