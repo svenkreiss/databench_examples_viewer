@@ -8,10 +8,13 @@ with Redis Queue cannot be shown here but are available in the GitHub
 repository
 [svenkreiss/databench_examples](https://github.com/svenkreiss/databench_examples).
 
-Main GitHub repository: [svenkreiss/databench](https://github.com/svenkreiss/databench)  
 User guide and API: 
 [svenkreiss.com/databench/](http://www.svenkreiss.com/databench/)"""
 
+__version__ = "0.1.0"
+
+
+import analyses.stats
 import analyses.simplepi
 # import analyses.slowpi
 import analyses.mpld3pi
