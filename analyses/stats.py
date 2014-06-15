@@ -1,8 +1,5 @@
 """Providing simple stats about the currently running instance."""
 
-import math
-from time import sleep
-from random import random
 
 import databench
 

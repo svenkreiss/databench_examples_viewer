@@ -16,7 +16,6 @@ __version__ = "0.1.0"
 
 import analyses.stats
 import analyses.simplepi
-# import analyses.slowpi
 import analyses.mpld3pi
 import analyses.mpld3PointLabel
 import analyses.mpld3Drag
