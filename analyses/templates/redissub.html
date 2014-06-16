@@ -56,13 +56,13 @@ redissub.html: {{ include_src('templates/redissub.html') }}
 			// inputData: dictionary where key is the name of the information
 			//     source and the value is its value
 
-			var selection = _selector.selectAll(".col-sm-3")
+			var selection = _selector.selectAll(".col-xs-3")
 				.data(d3.entries(inputData));
 
 			// new element
 			selection.enter()
 				.append("div")
-				.attr("class","col-sm-3");
+				.attr("class","col-xs-3");
 
 			// update (also runs with new element)
 			selection
