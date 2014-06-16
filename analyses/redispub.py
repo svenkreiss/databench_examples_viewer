@@ -9,7 +9,7 @@ import databench
 
 ANALYSIS = databench.Analysis('redispub', __name__)
 ANALYSIS.description = __doc__
-# ANALYSIS.thumbnail = 'redispub.png'
+ANALYSIS.thumbnail = 'redispub.png'
 
 def redis_creator():
     """Checks enironment for certatin redis providers and creates

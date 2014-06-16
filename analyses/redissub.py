@@ -9,7 +9,7 @@ import databench
 
 ANALYSIS = databench.Analysis('redissub', __name__)
 ANALYSIS.description = __doc__
-# ANALYSIS.thumbnail = 'redissub.png'
+ANALYSIS.thumbnail = 'redissub.png'
 
 @ANALYSIS.signals.on('connect')
 def onconnect():
