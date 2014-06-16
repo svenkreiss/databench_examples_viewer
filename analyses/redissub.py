@@ -24,7 +24,6 @@ def onconnect():
     @copy_current_request_context
     def listener():
         """Runs inside a spawned greenlet to asynchronously listen."""
-
         redis_client.subscribe('someStatsProvider')
         for m in redis_client.listen():
             ANALYSIS.signals.emit('log', m)
