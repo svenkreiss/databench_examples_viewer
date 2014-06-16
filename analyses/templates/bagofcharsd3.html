@@ -7,9 +7,6 @@
 
 {% block head %}
 <style>
-p{
-	max-width: 60em;
-}
 path.slice{
 	stroke-width: 2px;
 }
@@ -64,7 +61,7 @@ d3charcount.js: {{ include_src('static/d3charcount.js', 'js') }}
 		databench.signals.emit('sentence', {sentence: $(this).val()});
 	});
 
-	
+
 	var d3viz = d3charcount("#viz");
 
 	databench.signals.on('counts', function(msg) {
