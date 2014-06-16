@@ -18,7 +18,11 @@ def redis_creator():
     rediscloudenv = os.environ.get('REDISCLOUD_URL')
     if rediscloudenv:
         url = urlparse.urlparse(rediscloudenv)
-        r = redis.Redis(host=url.hostname, port=url.port, password=url.password)
+        r = redis.StrictRedis(
+            host=url.hostname,
+            port=url.port,
+            password=url.password,
+        )
     else:
         r = redis.StrictRedis()
 
