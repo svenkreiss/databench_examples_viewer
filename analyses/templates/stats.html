@@ -11,12 +11,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="refresh" content="300">
 
-        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel="shortcut icon" href="[[ url_for('static', filename='favicon.ico') ]]">
 
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <!-- <link rel="stylesheet" href="/static/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css"> -->
 
-        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <link rel="stylesheet" href="[[ url_for('static', filename='main.css') ]]">
         {% block head %}{% endblock %}
     </head>
     <body>
@@ -61,7 +61,7 @@
 	var databench = Databench('stats');
 	databench.genericElements.log($('#log'));
 </script>
-<!-- 
+<!--
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
