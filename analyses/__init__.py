@@ -17,9 +17,9 @@ __version__ = "0.2.0"
 
 import bagofcharsd3.analysis
 import flowers.analysis
-import mpld3Drag.analysis
-import mpld3PointLabel.analysis
-import mpld3pi.analysis
+# import mpld3Drag.analysis
+# import mpld3PointLabel.analysis
+# import mpld3pi.analysis
 import angular.analysis
 import simplepi.analysis
 
