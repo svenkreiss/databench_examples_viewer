@@ -5,26 +5,20 @@
 
 # Reducing compile time with special buildpack
 
+Using this buildpack: https://github.com/thenovices/heroku-buildpack-scipy
+
 ```bash
-heroku config:set BUILDPACK_URL=https://github.com/dbrgn/heroku-buildpack-python-sklearn/
+heroku config:set BUILDPACK_URL=https://github.com/thenovices/heroku-buildpack-scipy
 ```
 
 Which needs these exact versions:
 
 ```
-argparse==1.2.1
-distribute==0.6.24
-gunicorn==17.5
-wsgiref==0.1.2
-numpy==1.7.0
-matplotlib==1.1.0
-scipy==0.11.0
-scikit-learn==0.13.1
+numpy==1.8.1
+scipy==0.14.0
 ```
 
 
 # Port
 
 Databench will pick up the environment variable `PORT`. This functionally was introduced in Databench 0.1.1.
-
-Starting version 0.1.2, databench responds to non-local requests.

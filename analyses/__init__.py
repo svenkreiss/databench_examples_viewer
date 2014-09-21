@@ -9,18 +9,18 @@ repository
 [svenkreiss/databench_examples](https://github.com/svenkreiss/databench_examples).
 
 User guide and API:
-[svenkreiss.com/databench/](http://www.svenkreiss.com/databench/)"""
+[svenkreiss.com/databench/v0.3/](http://www.svenkreiss.com/databench/v0.3/)
+"""
 
-__version__ = "0.1.2"
+__version__ = "0.2.0"
 
 
-import analyses.stats
-import analyses.simplepi
-import analyses.mpld3pi
-import analyses.mpld3PointLabel
-import analyses.mpld3Drag
-import analyses.bagofchars
-import analyses.bagofcharsd3
-import analyses.angular
-import analyses.redispub
-import analyses.redissub
+import bagofcharsd3.analysis
+import flowers.analysis
+import mpld3Drag.analysis
+import mpld3PointLabel.analysis
+import mpld3pi.analysis
+import angular.analysis
+import simplepi.analysis
+
+import stats.analysis
