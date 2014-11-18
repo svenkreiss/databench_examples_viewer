@@ -9,10 +9,10 @@ repository
 [svenkreiss/databench_examples](https://github.com/svenkreiss/databench_examples).
 
 User guide and API:
-[svenkreiss.com/databench/v0.3/](http://www.svenkreiss.com/databench/v0.3/)
+[databench.trivial.io/v0.3/](http://databench.trivial.io/v0.3/)
 """
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 
 header_title = 'Databench Online Examples'
 
