@@ -14,6 +14,8 @@ User guide and API:
 
 __version__ = "0.2.0"
 
+header_title = 'Databench Online Examples'
+
 
 import bagofcharsd3.analysis
 import flowers.analysis
