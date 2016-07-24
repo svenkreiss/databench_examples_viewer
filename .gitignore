@@ -52,5 +52,6 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-venv
+venv*/
 .DS_Store
+analyses/node_modules/
