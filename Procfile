@@ -1,1 +1,1 @@
-web: databench --host=0.0.0.0
+web: databench --host=0.0.0.0 --log INFO

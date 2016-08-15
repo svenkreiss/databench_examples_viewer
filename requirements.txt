@@ -1,4 +1,4 @@
-databench==0.4b1
+databench==0.4.0
 
 cycler==0.10.0
 Markdown==2.6.6

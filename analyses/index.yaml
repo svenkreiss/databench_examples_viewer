@@ -11,8 +11,9 @@ analyses:
   - name: helloreact
     title: Hello React
     description: Demoing how to use React with Databench.
-    build: npm run build-helloreact
-    watch: helloreact/main.js
+    build: cd ..; npm run build-helloreact
+    watch:
+    - helloreact/main.js
   - name: angular
     title: Angular.js Demo
     description: Calculating π the simple way with angular.js interface.
