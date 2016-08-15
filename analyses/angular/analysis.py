@@ -12,7 +12,7 @@ class Angular(databench.Analysis):
         """Run as soon as a browser connects to this."""
 
         inside = 0
-        for draws in range(1, 10000):
+        for draws in range(1, 1000):
             yield tornado.gen.sleep(0.001)
 
             # generate points and check whether they are inside the unit circle

@@ -25,7 +25,7 @@ class MplPi(databench.Analysis):
 
         inside = 0
         rnd_draws = []
-        for draws in range(1, 10000):
+        for draws in range(1, 1000):
             yield tornado.gen.sleep(0.001)
 
             # generate points and check whether they are inside the unit circle
