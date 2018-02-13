@@ -2,18 +2,17 @@
 
 
 {% block head %}
-<link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/_static/databench.css?v={{databench_version}}" />
+<link rel="stylesheet" href="/static/font-awesome.min.css?v={{version}}" />
 {% end %}
 
 
 {% block analysis %}
-<div id="example">test</div>
+<h1>React App</h1>
+<div id="example">react-dom not rendered</div>
 {% end %}
 
 
 {% block footer %}
-<script src="/helloreact/static/bundle.js"></script>
+<script src="/helloreact/analysis.js?v={{version}}"></script>
 {% end %}
-
-
-{% block log %}{% end %}

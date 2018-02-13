@@ -54,6 +54,5 @@ docs/_build/
 
 venv*/
 .DS_Store
-analyses/node_modules/
 node_modules/
-analyses/helloreact/bundle.js
+analyses/helloreact/analysis.js*

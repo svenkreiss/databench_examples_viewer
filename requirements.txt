@@ -1,13 +1,12 @@
-databench==0.4.0
+databench==0.7.1
 
 cycler==0.10.0
 Markdown==2.6.6
-matplotlib==1.5.1
-numpy==1.11.1
-pyparsing==2.1.5
-python-dateutil==2.5.3
+matplotlib==2.1.2
+numpy==1.14.0
+pyparsing==2.2.0
+python-dateutil==2.6.1
 pytz==2016.6.1
-PyYAML==3.11
-pyzmq==15.3.0
-six==1.10.0
-tornado==4.4.1
+PyYAML==3.12
+pyzmq==17.0.0
+tornado==4.5.3
